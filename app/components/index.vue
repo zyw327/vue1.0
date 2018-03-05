@@ -1,7 +1,8 @@
 <template>
   <div>
-      <div>{{msg}}</div>
-      <child></child>
+      <div>{{msg}}---{{config}}</div>
+      <child :config.sync='config'></child>
+      <button @click="change">我也改</button>
   </div>
 </template>
 <script>
@@ -9,8 +10,14 @@ import Child from './child.vue'
 export default {
   data(){
     return {
-        msg: 'add'
+        msg: 'add',
+        config: '你好好'
     };
+  },
+  methods: {
+      change() {
+          this.config = '我也改';
+      }
   },
   components: {
       Child
