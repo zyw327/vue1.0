@@ -1,0 +1,36 @@
+{
+  "name": "first",
+  "version": "1.0.0",
+  "description": "first vue",
+  "main": "node index.js",
+  "scripts": {
+    "test": "node test.js",
+    "server": "webpack-dev-server --content-base ./ --port 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zyw327/vue1.0.git"
+  },
+  "keywords": [
+    "vue"
+  ],
+  "author": "smart zeng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zyw327/vue1.0/issues"
+  },
+  "homepage": "https://github.com/zyw327/vue#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.10",
+    "vue": "^1.0.28",
+    "vue-html-loader": "^1.2.4",
+    "vue-loader": "^8.7.0",
+    "vue-style-loader": "^4.0.2",
+    "webpack": "^2.4.1",
+    "webpack-cli": "^2.0.10",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
