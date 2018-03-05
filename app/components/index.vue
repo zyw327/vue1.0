@@ -1,12 +1,19 @@
 <template>
-  <div>{{msg}}</div>
+  <div>
+      <div>{{msg}}</div>
+      <child></child>
+  </div>
 </template>
-<<script>
+<script>
+import Child from './child.vue'
 export default {
   data(){
     return {
         msg: 'add'
     };
+  },
+  components: {
+      Child
   }
 }
 </script>
